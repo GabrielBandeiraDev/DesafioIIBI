@@ -24,6 +24,7 @@ O sistema possui:
 
 ## Estrutura do Projeto
 
+## Front : 
 ```
 src/
 ├── components/      # Componentes reutilizáveis
@@ -35,6 +36,21 @@ src/
 ├── types/           # Tipos TypeScript
 └── utils/           # Utilitários e funções auxiliares
 ```
+
+## Backend : 
+
+```
+login/
+├── Backeend/      # Componentes reutilizáveis
+│   ├── alembic/          # Componentes de UI básicos 
+├── main.py/           # Codigo Estruturado dentro da Main.py
+├── sql_app.db           # db criado quando rodar uvicorn
+└── utils/           # Utilitários e funções auxiliares
+```
+
+
+
+
 
 
 Página principal com diversas visualizações de dados:
@@ -187,6 +203,100 @@ curl -X POST "http://localhost:8000/products/purchase/" \
 3. **WebSocket**: Para atualizações em tempo real no dashboard.
 4. **Segurança**: Autenticação via JWT com tempo de expiração.
 
-## Licença
+---
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
+## 🧑🏽‍💻 Preto no Branco para DEVs que irão Analisar!
+
+Olá! Aqui estão algumas informações importantes e diretas para quem for analisar o projeto:
+
+---
+
+### 📹 Demonstração do Projeto
+
+* Gravei um vídeo no YouTube testando o sistema na prática:
+  👉 [Assista aqui](https://www.youtube.com/watch?v=yVTqT13Fl_k)
+
+---
+
+### 💼 Meu LinkedIn
+
+* Para mais informações sobre minha trajetória profissional, dá uma olhada no meu perfil:
+  👉 [linkedin.com/in/gabriel-bandeira-macedo-a2107a139](https://www.linkedin.com/in/gabriel-bandeira-macedo-a2107a139/)
+
+---
+
+### ⚙️ Como rodar o projeto localmente
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
+   ```
+
+2. No terminal, acesse a pasta do backend:
+
+   ```bash
+   cd backeend
+   ```
+
+3. Abra outro terminal e vá para o diretório `src`:
+
+   ```bash
+   cd src
+   ```
+
+4. Execute o backend com o Uvicorn:
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+5. Volte ao terminal raiz e instale as dependências do frontend:
+
+   ```bash
+   npm install
+   ```
+
+6. Em seguida, inicie o frontend:
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+### 📁 Estrutura do Projeto
+
+* O backend está centralizado no arquivo `main.py`.
+  Esse projeto foi planejado para ter baixa escalabilidade e ser mantido apenas por mim, o que justificou essa organização mais simples.
+  Durante o desafio, também estava envolvido com demandas da minha empresa atual, então priorizei agilidade e clareza.
+
+---
+
+### 🚀 Diferenciais Implementados
+
+✅ **Exportação de dados em Excel (.xlsx)**
+
+* Adicionei um botão "Gerar Relatório" no dashboard.
+* O relatório exporta todos os gráficos e estatísticas exibidos.
+
+✅ **Otimização de performance no backend com cache (Redis)**
+
+* Implementei caching em pontos estratégicos para melhorar a latência e escalabilidade da API.
+
+---
+
+### 🛠️ Extras
+
+* Alembic funcionando corretamente para controle de versões no banco de dados.
+
+---
+
+Se precisar de algo, é só me chamar! 😊
+Obrigado pela análise!
+
+---
+
+
+
+
