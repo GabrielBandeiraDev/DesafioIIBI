@@ -1,6 +1,52 @@
 # API de Gerenciamento de Produtos, Vendas e Painéis Analíticos
 
-Esta API fornece uma solução completa para o gerenciamento de produtos, controle de vendas e visualização de dados em tempo real por meio de painéis interativos.
+Esta aplicação fornece uma solução completa para o gerenciamento de produtos, controle de vendas e visualização de dados em tempo real por meio de painéis interativos. 
+desafio solicitado pela empresa IBBI. 
+
+
+## Visão Geral
+
+O sistema possui:
+- **Página de Login** com validação de formulário e integração com backend
+- **Dashboard de Vendas** com múltiplas visualizações de dados
+- **Conexão em tempo real** via WebSocket para atualizações instantâneas
+- **Geração de relatórios** em Excel
+
+## Tecnologias Frontend
+
+- **React** - Biblioteca principal para construção de interfaces
+- **Vite** - Ferramenta de build e desenvolvimento
+- **TypeScript** - Adiciona tipagem estática ao JavaScript
+- **React Icons** - Ícones para a interface
+- **Recharts** - Biblioteca para visualização de dados
+- **Date-fns** - Manipulação de datas
+- **SheetJS (xlsx)** - Geração de relatórios Excel
+
+## Estrutura do Projeto
+
+```
+src/
+├── components/      # Componentes reutilizáveis
+│   ├── ui/          # Componentes de UI básicos
+│   └── ...          # Outros componentes
+├── pages/           # Páginas da aplicação
+│   ├── Login/       # Página de login
+│   └── Dashboard/   # Página principal
+├── types/           # Tipos TypeScript
+└── utils/           # Utilitários e funções auxiliares
+```
+
+
+Página principal com diversas visualizações de dados:
+
+- **Cartões de resumo** (total de vendas, faturamento, ticket médio)
+- **Gráfico de tendência** de vendas ao longo do tempo
+- **Tabela** com últimas vendas
+- **Gráfico de pizza** com vendas por categoria
+- **Gráfico de barras** com produtos mais vendidos
+- **Notificações em tempo real** via WebSocket
+- **Geração de relatórios** em Excel
+
 
 ## Funcionalidades Principais
 
@@ -20,13 +66,14 @@ Esta API fornece uma solução completa para o gerenciamento de produtos, contro
 - **JWT** - Autenticação segura de usuários
 - **WebSocket** - Comunicação em tempo real
 - **SQLite** - Banco de dados embutido (pode ser substituído por outros)
+- **React + Vite + tsx** - Frontend
 
 ## Instalação e Execução
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone 
+   cd backeend
    ```
 
 2. Instale as dependências:
