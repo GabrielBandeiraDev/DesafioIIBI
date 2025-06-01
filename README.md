@@ -42,7 +42,7 @@ src/
 ```
 login/
 ├── Backeend/      # Arquivo principal 
-│   ├──             # migrar dados  
+│   ├──Alembic             # migrar dados  
 ├── main.py/           # Codigo Estruturado dentro da Main.py
 ├── sql_app.db           # db criado quando rodar uvicorn
 └── utils/           # Utilitários e funções auxiliares
